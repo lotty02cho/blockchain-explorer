@@ -1,0 +1,18 @@
+postgres://hppoc:password@127.0.0.1:5432/fabricexplorer
+<<<<<<<<<<<<<<<<<<<<<<<<<< Explorer Error >>>>>>>>>>>>>>>>>>>>>
+TypeError: Cannot read property 'size' of undefined
+    at Platform.initialize (/opt/gopath/src/github.com/hyperledger/blockchain-explorer-v0.3.5/app/platform/fabric/Platform.js:52:45)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+(node:2609) DeprecationWarning: grpc.load: Use the @grpc/proto-loader module with grpc.loadPackageDefinition instead
+Received kill signal, shutting down gracefully
+Closed out connections
+postgres://hppoc:password@127.0.0.1:5432/fabricexplorer
+<<<<<<<<<<<<<<<<<<<<<<<<<< Explorer Error >>>>>>>>>>>>>>>>>>>>>
+TypeError: Cannot read property 'size' of undefined
+    at Platform.initialize (/opt/gopath/src/github.com/hyperledger/blockchain-explorer-v0.3.5/app/platform/fabric/Platform.js:52:45)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+(node:5671) DeprecationWarning: grpc.load: Use the @grpc/proto-loader module with grpc.loadPackageDefinition instead
+Received kill signal, shutting down gracefully
+Closed out connections

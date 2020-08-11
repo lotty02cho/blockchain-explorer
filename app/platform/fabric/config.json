@@ -1,0 +1,80 @@
+{
+  "network-config": {
+    "org1": {
+      "name": "peerorg1",
+      "mspid": "org1MSP",
+      "peer1": {
+        "requests": "grpcs://172.27.42.55:7051",
+        "events": "grpcs://172.27.42.55:7053",
+        "server-hostname": "peer0.org1.honeybee.com",
+        "tls_cacerts": "/opt/gopath/src/github.com/hyperledger/honeybee_cloud_haccp/network/artifacts/crypto-config/peerOrganizations/org1.honeybee.com/peers/peer0.org1.honeybee.com/tls/ca.crt"
+      },
+      "peer2": {
+        "requests": "grpcs://172.27.42.55:7056",
+        "events": "grpcs://172.27.42.55:7058",
+        "server-hostname": "peer1.org1.honeybee.com",
+        "tls_cacerts": "/opt/gopath/src/github.com/hyperledger/honeybee_cloud_haccp/network/artifacts/crypto-config/peerOrganizations/org1.honeybee.com/peers/peer1.org1.honeybee.com/tls/ca.crt"
+      },
+      "admin": {
+        "key": "/opt/gopath/src/github.com/hyperledger/honeybee_cloud_haccp/network/artifacts/crypto-config/peerOrganizations/org1.honeybee.com/users/Admin@org1.honeybee.com/msp/keystore",
+        "cert": "/opt/gopath/src/github.com/hyperledger/honeybee_cloud_haccp/network/artifacts/crypto-config/peerOrganizations/org1.honeybee.com/users/Admin@org1.honeybee.com/msp/signcerts"
+      }
+    },
+    "org2": {
+      "name": "peerorg2",
+      "mspid": "org2MSP",
+      "peer1": {
+        "requests": "grpcs://101.101.165.152:7051",
+        "events": "grpcs://101.101.165.152:7053",
+        "server-hostname": "peer0.org2.honeybee.com",
+        "tls_cacerts": "/opt/gopath/src/github.com/hyperledger/honeybee_cloud_haccp/network/artifacts/crypto-config/peerOrganizations/org2.honeybee.com/peers/peer0.org2.honeybee.com/tls/ca.crt"
+      },
+      "peer2": {
+        "requests": "grpcs://101.101.165.152:7056",
+        "events": "grpcs://101.101.165.152:7058",
+        "server-hostname": "peer1.org2.honeybee.com",
+        "tls_cacerts": "/opt/gopath/src/github.com/hyperledger/honeybee_cloud_haccp/network/artifacts/crypto-config/peerOrganizations/org2.honeybee.com/peers/peer1.org2.honeybee.com/tls/ca.crt"
+      },
+      "admin": {
+        "key": "/opt/gopath/src/github.com/hyperledger/honeybee_cloud_haccp/network/artifacts/crypto-config/peerOrganizations/org2.honeybee.com/users/Admin@org2.honeybee.com/msp/keystore",
+        "cert": "/opt/gopath/src/github.com/hyperledger/honeybee_cloud_haccp/network/artifacts/crypto-config/peerOrganizations/org2.honeybee.com/users/Admin@org2.honeybee.com/msp/signcerts"
+      }
+    },
+    "org3": {
+      "name": "peerorg3",
+      "mspid": "org3MSP",
+      "peer1": {
+        "requests": "grpcs://101.101.164.83:7051",
+        "events": "grpcs://101.101.164.83:7053",
+        "server-hostname": "peer0.org3.honeybee.com",
+        "tls_cacerts": "/opt/gopath/src/github.com/hyperledger/honeybee_cloud_haccp/network/artifacts/crypto-config/peerOrganizations/org3.honeybee.com/peers/peer0.org3.honeybee.com/tls/ca.crt"
+      },
+      "peer2": {
+        "requests": "grpcs://101.101.164.83:7056",
+        "events": "grpcs://101.101.164.83:7058",
+        "server-hostname": "peer1.org3.honeybee.com",
+        "tls_cacerts": "/opt/gopath/src/github.com/hyperledger/honeybee_cloud_haccp/network/artifacts/crypto-config/peerOrganizations/org3.honeybee.com/peers/peer1.org3.honeybee.com/tls/ca.crt"
+      },
+      "admin": {
+        "key": "/opt/gopath/src/github.com/hyperledger/honeybee_cloud_haccp/network/artifacts/crypto-config/peerOrganizations/org3.honeybee.com/users/Admin@org3.honeybee.com/msp/keystore",
+        "cert": "/opt/gopath/src/github.com/hyperledger/honeybee_cloud_haccp/network/artifacts/crypto-config/peerOrganizations/org3.honeybee.com/users/Admin@org3.honeybee.com/msp/signcerts"
+      }
+    }
+  },
+  "channel": "honeybeechannel",
+  "orderers": [
+    {
+      "mspid": "OrdererMSP",
+      "server-hostname": "orderer.org1.honeybee.com",
+      "requests": "grpcs://172.27.42.55:7050",
+      "tls_cacerts": "/opt/gopath/src/github.com/hyperledger/honeybee_cloud_haccp/network/artifacts/crypto-config/ordererOrganizations/honeybee.com/orderers/orderer.org1.honeybee.com/tls/ca.crt"
+    }
+  ],
+  "keyValueStore": "/tmp/fabric-client-kvs",
+  "configtxgenToolPath": "/opt/gopath/src/github.com/hyperledger/honeybee_cloud_haccp/network/bin",
+  "SYNC_START_DATE_FORMAT": "YYYY/MM/DD",
+  "syncStartDate": "2018/09/10",
+  "eventWaitTime": "30000",
+  "license": "Apache-2.0",
+  "version": "1.4"
+}
